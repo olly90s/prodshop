@@ -1,0 +1,8 @@
+uuid: bf25f131-4115-419c-8e12-3bc8c6619191
+langcode: en
+status: true
+dependencies: {  }
+id: section_hero
+label: 'Section Hero'
+revision: false
+description: null

@@ -1,0 +1,30 @@
+uuid: 35b93fdc-9b72-4a29-9922-54adf15f995d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.section_hero
+    - field.field.block_content.section_hero.field_image
+  module:
+    - svg_image
+id: block_content.section_hero.default
+targetEntityType: block_content
+bundle: section_hero
+mode: default
+content:
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

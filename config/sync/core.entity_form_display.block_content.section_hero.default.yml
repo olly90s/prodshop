@@ -1,0 +1,32 @@
+uuid: 8b8bbb54-e917-4178-8a88-f2693df3301f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.section_hero
+    - field.field.block_content.section_hero.field_image
+    - image.style.thumbnail
+  module:
+    - svg_image
+id: block_content.section_hero.default
+targetEntityType: block_content
+bundle: section_hero
+mode: default
+content:
+  field_image:
+    type: image_image
+    weight: 27
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
