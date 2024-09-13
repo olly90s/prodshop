@@ -3,6 +3,8 @@ type: module
 description: 'Custom prodshop functionality.'
 package: Custom
 core_version_requirement: ^10 || ^11
+dependencies:
+  - default_content
 default_content:
   node:
     - 5462e353-6591-4afc-b9cd-0b6e978f510e
