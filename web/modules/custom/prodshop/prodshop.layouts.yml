@@ -1,0 +1,13 @@
+prodshop_prodshop_one_column:
+  label: 'Prodshop One Column'
+  category: 'Prodshop Layouts'
+  path: layouts/prodshop_one_column
+  template: prodshop-one-column
+  regions:
+    main:
+      label: Main content
+    sidebar:
+      label: Sidebar
+  default_region: main
+  icon_map:
+    - [main, main, sidebar]

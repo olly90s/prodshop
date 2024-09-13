@@ -1,0 +1,5 @@
+name: 'Prodshop'
+type: module
+description: 'Custom prodshop functionality.'
+package: Custom
+core_version_requirement: ^10 || ^11

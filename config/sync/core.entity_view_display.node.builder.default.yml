@@ -1,0 +1,68 @@
+uuid: 44283d28-977a-4986-b2f6-42a03478e0ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.builder
+  content:
+    - 'block_content:section_hero:b862c4ed-f9e1-4f21-9eda-99d32526a467'
+  module:
+    - block_content
+    - layout_builder
+    - layout_builder_restrictions
+    - prodshop
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: prodshop_prodshop_one_column
+        layout_settings:
+          label: Banner
+          context_mapping: {  }
+        components:
+          78d2660e-7c18-4042-8071-54f9850655bf:
+            uuid: 78d2660e-7c18-4042-8071-54f9850655bf
+            region: main
+            configuration:
+              id: 'block_content:b862c4ed-f9e1-4f21-9eda-99d32526a467'
+              label: 'Section Hero block.'
+              label_display: '0'
+              provider: block_content
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      allowed_layouts:
+        - prodshop_prodshop_one_column
+      denylisted_blocks: {  }
+      allowlisted_blocks:
+        'Custom blocks':
+          - 'block_content:b862c4ed-f9e1-4f21-9eda-99d32526a467'
+      restricted_categories:
+        - Announcements
+        - 'Content fields'
+        - 'Custom block types'
+        - Forms
+        - Help
+        - 'Inline blocks'
+        - 'Lists (Views)'
+        - Menus
+        - System
+        - User
+        - core
+id: node.builder.default
+targetEntityType: node
+bundle: builder
+mode: default
+content: {  }
+hidden:
+  links: true
