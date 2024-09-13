@@ -2,30 +2,42 @@
   <div class="w-1/2">
   {% block content %}
     {% set classes = [
-      "bg-accent-green",
       "text-black",
       "px-6 py-3",
       "rounded",
       "text-lg",
       "hero-button",
       "font-semibold"
-    ]|merge(content.field_button.0["#url"].options["attributes"])
+    ]|merge(content.field_button[0]["#url"].options["attributes"])
     %}
-    {% set title_size = content.field_title_size.0|render %}
+    {% set button_type = content.field_button_type[0]|render.__toString() %}
+    {% set title_size = content.field_title_size[0] %}
 
-    <h{{ title_size }} class="text-6xl mb-8 playfair-display hero-title pr-16 mt-16 pt-8">{{ content.field_title.0 }}</h{{ title_size }}>
+    {% if button_type == "Primary" %}
+      {% set classes = classes|merge(["bg-accent-green"]) %}
+    {% else %}
+      {% set classes = classes|merge(["bg-white"]) %}
+    {% endif %}
+
+    <h{{ title_size }} class="text-6xl mb-8 playfair-display hero-title pr-16 mt-16 pt-8">{{ content.field_title[0] }}</h{{ title_size }}>
     <div class="mb-8 text-lg">
       {{ content.field_description.0 }}
     </div>
-    <button
-      onclick="location.href='{{ content.field_button.0["#url_title"] }}'"
-      class="{{ classes|join(" ") }}"
-      type="button">
-      {{ content.field_button.0["#title"] }}
-    </button>
+
+    {% if button_type == "Link" %}
+      <a href="{{ content.field_button[0]["#url_title"] }}">{{ content.field_button[0]["#title"] }}</a>
+    {% else %}
+      <button
+        onclick="location.href='{{ content.field_button[0]["#url_title"] }}'"
+        class="{{ classes|join(" ") }}"
+        type="button">
+        {{ content.field_button[0]["#title"] }}
+      </button>
+    {% endif %}
+
   </div>
   <div class="w-1/2 pl-16">
-    {{ content.field_image.0 }}
+    {{ content.field_image[0] }}
   </div>
   {% endblock %}
 </div>
