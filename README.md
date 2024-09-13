@@ -1,3 +1,6 @@
+# Productive Shop
+
+### To launch using ddev:
 ```bash
 ddev start
 ddev composer install
