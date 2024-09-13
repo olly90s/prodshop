@@ -1,0 +1,6 @@
+.chevron {
+  background-image: url("../../../../../core/themes/claro/images/icons/000f33/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  padding-right: 1.25rem;
+}

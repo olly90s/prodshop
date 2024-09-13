@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9d02070f-0758-4a66-bfa0-1f56fb984a15
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'Careers new.svg'
+  uri:
+    -
+      value: 'public://2024-09/Careers new.svg'
+  filemime:
+    -
+      value: image/svg+xml
+  filesize:
+    -
+      value: 85094
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1726206218

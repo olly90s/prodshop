@@ -2,6 +2,8 @@
 global:
   js:
     js/prodshop-theme.js: {}
+  dependencies:
+    - core/drupal
   css:
     base:
       css/base/elements.css: {}
@@ -25,3 +27,11 @@ global:
 tailwindcss:
   js:
     https://cdn.tailwindcss.com: { type: external, minified: true, weight: -10 }
+source_sans:
+  css:
+    component:
+      //fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap: { type: external }
+playfair_display:
+  css:
+    component:
+      //fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap: { type: external }

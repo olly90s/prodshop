@@ -13,4 +13,4 @@ features:
 logo:
   path: themes/custom/prodshop_theme/logo.png
   url: null
-  use_default: false
+  use_default: true

@@ -1,0 +1,11 @@
+{% if content %}
+  <div{{ attributes.addClass('py-4') }}>
+    <div class="container bg-white mx-auto px-4 text-black flex flex-nowrap justify-between items-center rounded">
+      {{ content }}
+      <div class="py-7 px-4">
+        <a href="#" class="border border-black text-black px-8 py-2 rounded text-sm whitespace-nowrap">{{ 'Become A Client'|t }}</a>
+      </div>
+    </div>
+    </div>
+  </div>
+{% endif %}

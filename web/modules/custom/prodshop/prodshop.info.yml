@@ -3,3 +3,19 @@ type: module
 description: 'Custom prodshop functionality.'
 package: Custom
 core_version_requirement: ^10 || ^11
+default_content:
+  node:
+    - 5462e353-6591-4afc-b9cd-0b6e978f510e
+  menu_link_content:
+    - aa06f64b-5d38-4b13-9355-baa56c52885c
+    - 026d20a8-c76f-4a22-a651-84a248fe6473
+    - 8e8b457c-a11d-4dbd-879c-39c153dc3067
+    - 7ef8c5e1-20bd-4da6-9340-9374e607a3f1
+    - 11318bdc-e8ba-4be2-b937-ea3e0fd2ab15
+    - e24d1373-d3d3-48e3-80f4-9dd3ecfe9a76
+    - b37a11ee-0888-412b-b88a-b54fdcfd300f
+    - 6391f457-f183-4907-97cc-547716308646
+    - b0933c66-b4fb-44f7-89b0-220f817e97db
+    - b3846214-26ac-4c22-bfb4-e176277bf594
+  block_content:
+    - b862c4ed-f9e1-4f21-9eda-99d32526a467

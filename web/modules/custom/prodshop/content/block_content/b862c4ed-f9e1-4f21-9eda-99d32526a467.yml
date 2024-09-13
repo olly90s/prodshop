@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: b862c4ed-f9e1-4f21-9eda-99d32526a467
+  bundle: section_hero
+  default_langcode: en
+  depends:
+    9d02070f-0758-4a66-bfa0-1f56fb984a15: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Section Hero block.'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_button:
+    -
+      uri: 'internal:/node'
+      title: 'Get a SEO Audit'
+      options:
+        attributes:
+          class: btn
+  field_button_type:
+    -
+      value: primary
+  field_description:
+    -
+      value: "In a sea of website auditing tools and services, how do you know what actually works? That's what we help break down and implement. Our holistic approach takes into consideration business goals first, then we align immediate and long-term fixes to scale with your growth. Done is <em>better</em> than waiting for perfect."
+      format: restricted_html
+  field_image:
+    -
+      entity: 9d02070f-0758-4a66-bfa0-1f56fb984a15
+      alt: ''
+      title: ''
+      width: 580
+      height: 485
+  field_title:
+    -
+      value: 'SEO audit and website optimization'
+  field_title_size:
+    -
+      value: 2

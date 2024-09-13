@@ -3,11 +3,11 @@
   <div class="flex items-center">
     {% if site_logo %}
       <a href="{{ path('<front>') }}" rel="home">
-        <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" fetchpriority="high"  style="height:50px;" />
+        <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" fetchpriority="high" class="site-logo mx-2" />
       </a>
     {% endif %}
     {% if site_name %}
-      <a href="{{ path('<front>') }}" rel="home" class="text-black text-2xl font-bold">{{ site_name }}</a>
+      <a href="{{ path('<front>') }}" rel="home" class="text-black playfair-display site-name">{{ site_name }}</a>
     {% endif %}
   </div>
 {% endblock %}
