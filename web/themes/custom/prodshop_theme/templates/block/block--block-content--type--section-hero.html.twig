@@ -1,0 +1,30 @@
+<div{{ attributes.addClass('flex justify-between items-center') }}>
+  <div class="w-1/2">
+  {% block content %}
+    {% set classes = [
+      "bg-accent-green",
+      "text-black",
+      "px-6 py-3",
+      "rounded",
+      "text-lg",
+      "font-semibold"
+    ]|merge(content.field_button.0["#url"].options["attributes"])
+    %}
+    {% set title_size = content.field_title_size.0|render %}
+
+    <h{{ title_size }} class="text-5xl font-bold mb-6">{{ content.field_title.0 }}</h{{ title_size }}>
+    <div class="mb-8">
+      {{ content.field_description.0 }}
+    </div>
+    <button
+      onclick="location.href='{{ content.field_button.0["#url_title"] }}'"
+      class="{{ classes|join(" ") }}"
+      type="button">
+      {{ content.field_button.0["#title"] }}
+    </button>
+  </div>
+  <div class="w-2/5">
+    {{ content.field_image.0 }}
+  </div>
+  {% endblock %}
+</div>

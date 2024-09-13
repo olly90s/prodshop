@@ -1,0 +1,21 @@
+uuid: de19ddd1-1e43-4755-95f8-306726d78a45
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.section_hero
+    - field.storage.block_content.field_button_type
+  module:
+    - options
+id: block_content.section_hero.field_button_type
+field_name: field_button_type
+entity_type: block_content
+bundle: section_hero
+label: 'Button type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

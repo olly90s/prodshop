@@ -20,6 +20,7 @@
         "drupal/core-project-message": "^10.3",
         "drupal/core-recommended": "^10.3",
         "drupal/layout_builder_restrictions": "^3.0",
+        "drupal/link_class": "^2.1",
         "drupal/svg_image": "^3.0",
         "drush/drush": "^13.1"
     },

@@ -22,6 +22,7 @@ module:
   layout_builder_restrictions: 0
   layout_discovery: 0
   link: 0
+  link_class: 0
   menu_link_content: 0
   menu_ui: 0
   mysql: 0
@@ -42,4 +43,6 @@ module:
 theme:
   olivero: 0
   claro: 0
+  stark: 0
+  prodshop_theme: 0
 profile: minimal

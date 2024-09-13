@@ -1,0 +1,22 @@
+uuid: d7e06c08-2cfc-4ab7-b385-69ceb4f3e8d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - prodshop_theme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: prodshop_theme_content
+theme: prodshop_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

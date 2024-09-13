@@ -4,14 +4,48 @@ status: true
 dependencies:
   config:
     - block_content.type.section_hero
+    - field.field.block_content.section_hero.field_button
+    - field.field.block_content.section_hero.field_button_type
+    - field.field.block_content.section_hero.field_description
     - field.field.block_content.section_hero.field_image
+    - field.field.block_content.section_hero.field_title
+    - field.field.block_content.section_hero.field_title_size
   module:
+    - link
+    - options
     - svg_image
+    - text
 id: block_content.section_hero.default
 targetEntityType: block_content
 bundle: section_hero
 mode: default
 content:
+  field_button:
+    type: link_separate
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_button_type:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_image:
     type: image
     label: hidden
@@ -26,5 +60,20 @@ content:
       svg_render_as_image: true
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_title_size:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
     region: content
 hidden: {  }
